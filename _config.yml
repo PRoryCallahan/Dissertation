@@ -1,0 +1,22 @@
+# Site settings
+title: "Elachista"
+email: pcallahan@fordham.edu
+author: Patrick Callahan
+description: A Jekyll theme for displaying
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+
+
+# Build settings
+permalink: :title/
+sass:
+  sass_dir: css
+
+# Social icons
+show_social_icons: true
+github_username: PRoryCallahan
+twitter_username: P_RoryCallahan
+
+# plugins
+plugins: [jekyll-paginate]
+paginate: 3
