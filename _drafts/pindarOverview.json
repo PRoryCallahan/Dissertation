@@ -1,0 +1,62 @@
+{
+  "Epinikia": {
+    "odeBook": "Olympian",
+    "odeNumber": 1,
+    "victor": {
+      "victorName": "Hieron",
+      "victorCity": "Syracuse"
+    },
+    "event": "single-horse",
+    "date": 476,
+    "meter": "aeolic",
+    "numberVerses": 116
+  },
+  {
+    "odeBook": "Olympian",
+    "odeNumber": 2,
+    "victor": {
+      "victorName": "Theron",
+      "victorCity": "Akragas"
+    },
+    "event": "four-horse",
+    "date": 476,
+    "meter": "iambic",
+    "numberVerses": 100
+  },
+  {
+    "odeBook": "Olympian",
+    "odeNumber": 3,
+    "victor": {
+      "victorName": "Theron",
+      "victorCity": "Akragas"
+    },
+    "event": "four-horse",
+    "date": 476,
+    "meter": "dactylo-epitrite",
+    "numberVerses": 45
+  },
+  {
+    "odeBook": "Psaumis",
+    "odeNumber": ,
+    "victor": {
+      "victorName": "",
+      "victorCity": ""
+    },
+    "event": "",
+    "date": ,
+    "meter": "",
+    "numberVerses":
+  },
+  {
+    "odeBook": "",
+    "odeNumber": ,
+    "victor": {
+      "victorName": "",
+      "victorCity": ""
+    },
+    "event": "",
+    "date": ,
+    "meter": "",
+    "numberVerses":
+  }
+}

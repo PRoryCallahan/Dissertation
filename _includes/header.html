@@ -1,20 +1,21 @@
 <!-- NAV -->
-<nav class="navbar navbar-expand-md navbar-light py-4">
-  <div class="container">
+<nav class="navbar navbar-expand-md navbar-light bg-light">
     <a href="{{ site.baseurl }}/" class="navbar-brand">
       <h3 class="d-inline align-middle pl-3 text-primary">The Pindar Scholia</h3>
     </a>
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a href="{{ site.baseurl }}/multitext/" class="nav-link">Multitext</a>
+          <a href="{{ site.baseurl }}/multitext/" class="nav-link">Pindar Opera Viewer</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="{{ site.baseurl }}/chapters/" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Chapters
-            </a>
+            <a class="nav-link dropdown-toggle" href="{{ site.baseurl }}/chapters/" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Chapters
+              </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="{{ site.baseurl }}/chapter_1/">Chapter 1</a>
               <a class="dropdown-item" href="{{ site.baseurl }}/chapter_2/">Chapter 2</a>
@@ -31,5 +32,4 @@
         </li>
       </ul>
     </div>
-  </div>
 </nav>

@@ -1,5 +1,5 @@
 # Site settings
-title: "Elachista"
+title: "The Pindar Scholia"
 email: pcallahan@fordham.edu
 author: Patrick Callahan
 description: A Jekyll theme for displaying
@@ -19,4 +19,4 @@ twitter_username: P_RoryCallahan
 
 # plugins
 plugins: [jekyll-paginate]
-paginate: 3
+paginate: 5

@@ -1,0 +1,44 @@
+//OVERLAY COLOR SCHEMES
+
+.overlay-dark {
+    background-color: rgba(black, 0.4);
+}
+
+.overlay-olympian {
+    background: rgba(127, 11, 11, 0.3);
+}
+
+.overlay-pythian {
+    background: rgba(0, 150, 136, 0.3);
+}
+
+.overlay-nemean {
+    background: rgba(76, 175, 80, 0.3);
+}
+
+.overlay-isthmian {
+    background: rgba(255, 152, 0, 0.3);
+}
+
+.in-progress {
+  filter: blur(4px);
+ -webkit-filter: blur(4px);
+}
+
+//BUTTON COLOR SCHEMES
+
+.btn-olympian {
+  background-color: rgba(127, 11, 11, 1.0);
+}
+
+.btn-pythian {
+  background-color: rgba(0, 150, 136, 1.0);
+}
+
+.btn-nemean {
+  background-color: rgba(76, 175, 80, 1.0);
+}
+
+.btn-isthmian {
+  background-color: rgba(255, 152, 0, 1.0);
+}

@@ -1,0 +1,731 @@
+---
+layout: multitext
+permalink: /multitext/
+---
+<div id="text" class="container pt-3">
+<p class="text-right"><i>Advanced search features to follow</i>&nbsp;&nbsp;<i class="fa fa-search fa-flip-horizontal" aria-hidden="true"></i></p>
+<!-- Button for advanced search option
+<div class="row">
+  <button type="button" name="button"></button>
+  trigger
+  dropdown options
+  scholiaClass - dropdown options: hypothesis, title, inscription, exegetical
+  book - dropdown options: Olympians, Pythians, Nemeans, Isthmians
+  ode - trigger number array based on book
+  line numbers?
+  lemma - search term
+  scholion - search term
+  MS - vector
+  Language - options: Greek, English
+</div>
+-->
+<h1 class="text-center"><span class="display-1"><b>P</b></span><span class="display-4">indar </span><span class="display-1"><b>O</b></span><span class="display-4">pera </span><span class="display-1"><b>V</b></span><span class="display-4">iewer</span></h1>
+<div class="card">
+<div class="card-body text-primary">Welcome to the Pindar Opera Viewer (POV), a Pindar Multitext or choose-your-own adventure into the epinikia of Pindar. The project began as an attempt to provide some updates and a translation to <a href="https://da.wikipedia.org/wiki/Anders_Bj%C3%B8rn_Drachmann" target="blank">Anders Bjørn Drachmann</a>'s 3-volume Teubner edition of the Scholia Vetera, but picked a new way of thinking about textual criticism, largely inspired by the <a href="https://www.homermultitext.org/" target="blank">Homer Multitext project</a> of Casey Dué and Mary Ebbott as well as many scholars of Meso-American and Medieval texts discussed in <a href="{{ site.baseurl }}/chapter_1/" target="blank">Chapter 1</a> of the dissertation.<br><br>Take a look at the <a href="#">documentation<svg class="bi bi-info-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+  <circle cx="8" cy="4.5" r="1"/>
+</svg></a> for tips and tricks, or jump right in!</div>
+</div>
+</div>
+<br>
+<section>
+    <!--Grid row-->
+    <div class="row mx-1">
+        <!--Grid column-->
+        <div class="col-md-12 mb-4">
+            <div class="card card-image" style="background-image: url(../img/RaffaelParnassus.jpg);">
+                <div class="overlay-dark text-white text-center align-items-center py-5 px-4">
+                    <div>
+                        <h6 class="display-2">Pindar</h6>
+                        <h3 class="card-title py-3">Vitae and Other Front Matter</h3>
+                        <p class="pb-3">Explore the ancient lives and more</p>
+                        <a class="btn btn-info btn-rounded"><i class="far fa-clone left"></i> View Vitae</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+            <div class="card card-image" style="background-image: url(../img/olympia.jpg);">
+                <div class="overlay-olympian text-white text-center align-items-center py-5 px-4">
+                    <div>
+                        <h3 class="card-title display-3 py-3">Olympians</h3>
+                        <a href="#olympianOdes" class="btn btn-olympian btn-rounded text-white" data-toggle="collapse"  role="button" aria-expanded="false" aria-controls="olympianOdes"><i class="far fa-clone left"></i> Text Options</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+            <div class="card card-image" style="background-image: url(../img/pytho.jpg);">
+                <div class="overlay-pythian text-white text-center align-items-center py-5 px-4">
+                    <div>
+                        <h3 class="card-title display-3 py-3">Pythians</h3>
+                        <a class="btn btn-pythian btn-rounded text-white" data-toggle="collapse" href="#pythianOdes" role="button" aria-expanded="false" aria-controls="pythianOdes"><i class="far fa-clone left"></i> Text Options</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+            <div class="card card-image in-progress" style="background-image: url(../img/nemea.jpg);">
+                <div class="overlay-nemean text-white text-center align-items-center py-5 px-4">
+                    <div>
+                        <h3 class="card-title display-3 py-3">Nemeans</h3>
+                        <a class="btn btn-nemean btn-rounded text-white" data-toggle="collapse" href="#nemeanOdes" role="button" aria-expanded="false" aria-controls="nemeanOdes"><i class="far fa-clone left"></i> Text Options</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+            <div class="card card-image" style="background-image: url(../img/isthmus.jpg);">
+                <div class="overlay-isthmian text-white text-center align-items-center py-5 px-4">
+                    <div>
+                        <h3 class="card-title display-3 py-3">Isthmians</h3>
+                        <a class="btn btn-isthmian btn-rounded text-white" data-toggle="collapse" href="#isthmianOdes" role="button" aria-expanded="false" aria-controls="isthmianOdes"><i class="far fa-clone left"></i> Text Options</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+</section>
+<!--Book Section-->
+
+<section class="collapse" id="olympianOdes">
+<a name="olympianOdes"></a>
+
+  <div class="row mx-1">
+
+    <!--Grid column-->
+    <div class="col-md-12 mb-4">
+            <div class="card bg-primary text-white text-center align-items-center py-5 px-4">
+                <div>
+                    <h3 class="card-title py-3">Ancient Frontmatter</h3>
+                    <h6 class="display-2">Olympian Hypotheses</h6>
+                    <p class="pb-3">Explore the ancient lives and more</p>
+                    <a class="btn btn-primary btn-rounded"><i class="fa fa-book" aria-hidden="true"></i> View Hypotheses</a>
+                </div>
+            </div>
+    </div>
+    <!--Grid column-->
+    <!-- nb add "card-deck" -->
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-olympian">
+          <img class="card-img-top in-progress" src="../img/1horse.jpeg" alt="Single Horse Race">
+          <div class="card-body">
+            <h5 class="card-title">Olympian 1</h5>
+            <p class="card-text">For Hieron of Syracuse, single horse, 476 BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-olympian">
+          <img class="card-img-top in-progress" src="../img/4horse.jpeg" alt="Four Horse Race">
+          <div class="card-body">
+            <h5 class="card-title">Olympian 2</h5>
+            <p class="card-text">For Theron of Akragas, four horse, 476 BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-olympian">
+          <img class="card-img-top in-progress" src="../img/4horse.jpeg" alt="Four Horse Race">
+          <div class="card-body">
+            <h5 class="card-title">Olympian 3</h5>
+            <p class="card-text">For Theron of Akragas, four horse, 476 BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-olympian">
+          <img class="card-img-top in-progress" src="../img/4horse.jpeg" alt="Four Horse Race">
+          <div class="card-body">
+            <h5 class="card-title">Olympian 4</h5>
+            <p class="card-text">For Psaumis of Kamarina, four horse, 456 BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-olympian">
+          <img class="card-img-top in-progress" src="../img/mule.jpeg" alt="Mule Race">
+          <div class="card-body">
+            <h5 class="card-title">Olympian 5</h5>
+            <p class="card-text">For Psaumis of Kamarina, mule race, 448 BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-olympian">
+          <img class="card-img-top in-progress" src="../img/mule.jpeg" alt="Mule Race">
+          <div class="card-body">
+            <h5 class="card-title">Olympian 6</h5>
+            <p class="card-text">For Hagesias of Syracuse, mule race, 472/468(?) BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-olympian">
+          <img class="card-img-top in-progress" src="../img/boxing.jpeg" alt="Boxing">
+          <div class="card-body">
+            <h5 class="card-title">Olympian 7</h5>
+            <p class="card-text">For Diagoras of Rhodes, boxing, 464 BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-olympian">
+          <img class="card-img-top in-progress" src="../img/wrestling.jpeg" alt="Wrestling">
+          <div class="card-body">
+            <h5 class="card-title">Olympian 8</h5>
+            <p class="card-text">For Alkimedon of Aigina, boy's wrestling, 460 BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-olympian">
+          <img class="card-img-top in-progress" src="../img/wrestling.jpeg" alt="Wrestling">
+          <div class="card-body">
+            <h5 class="card-title">Olympian 9</h5>
+            <p class="card-text">For Epharmostos of Opous, wrestling, 468 BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-olympian">
+          <img class="card-img-top in-progress" src="../img/boxing.jpeg" alt="Boxing">
+          <div class="card-body">
+            <h5 class="card-title">Olympian 10</h5>
+            <p class="card-text">For Hagesidamos of Western Lokroi, boy's boxing, 476 BCE</p>
+            <a href="#" class="btn btn-info"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;&nbsp;In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-olympian">
+          <img class="card-img-top" src="../img/boxing.jpeg" alt="Boxing">
+          <div class="card-body">
+            <h5 class="card-title">Olympian 11</h5>
+            <p class="card-text">For Hagesidamos of Western Lokroi, boy's boxing, 476 BCE</p>
+            <a href="/olympian11/" class="btn btn-primary"><i class="fa fa-columns" aria-hidden="true"></i>&nbsp;&nbsp;Ode Multitext</a>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-olympian">
+          <img class="card-img-top in-progress" src="../img/race.jpeg" alt="Dolichos">
+          <div class="card-body">
+            <h5 class="card-title">Olympian 12</h5>
+            <p class="card-text">For Ergoteles of Himera, dolichos, 466 BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-olympian">
+          <img class="card-img-top in-progress" src="../img/race.jpeg" alt="Stadion">
+          <div class="card-body">
+            <h5 class="card-title">Olympian 13</h5>
+            <p class="card-text">For Xenophon of Corinth, stadion, 466 BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-olympian">
+          <img class="card-img-top in-progress" src="../img/race.jpeg" alt="Stadion">
+          <div class="card-body">
+            <h5 class="card-title">Olympian 14</h5>
+            <p class="card-text">For Asopichos of Orchomenos, stadion, 464 BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+  </div>
+
+</section>
+<!--End Olympians-->
+
+<section class="collapse" id="pythianOdes">
+<a name="pythianOdes"></a>
+  <!--Grid row-->
+  <div class="row mx-1">
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-pythian">
+          <img class="card-img-top in-progress" src="../img/4horse.jpeg" alt="Four Horse Race">
+          <div class="card-body">
+            <h5 class="card-title">Pythian 1</h5>
+            <p class="card-text">For Hieron of Syracuse, four horse, 470 BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-pythian">
+          <img class="card-img-top in-progress" src="../img/4horse.jpeg" alt="Four Horse Race">
+          <div class="card-body">
+            <h5 class="card-title">Pythian 2</h5>
+            <p class="card-text">For Hieron of Syracuse, four horse, (?) BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-pythian">
+          <img class="card-img-top in-progress" src="../img/1horse.jpeg" alt="Single Horse Race">
+          <div class="card-body">
+            <h5 class="card-title">Pythian 3</h5>
+            <p class="card-text">For Hieron of Syracuse, single horse, (?) BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-pythian">
+          <img class="card-img-top in-progress" src="../img/4horse.jpeg" alt="Four Horse Race">
+          <div class="card-body">
+            <h5 class="card-title">Pythian 4</h5>
+            <p class="card-text">For Arkesilas of Kyrene, four horse, 462 BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-pythian">
+          <img class="card-img-top in-progress" src="../img/mule.jpeg" alt="Mule Race">
+          <div class="card-body">
+            <h5 class="card-title">Pythian 5</h5>
+            <p class="card-text">For Arkesilas of Kyrene, four race, 462 BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-pythian">
+          <img class="card-img-top in-progress" src="../img/4horse.jpeg" alt="Four Horse Race">
+          <div class="card-body">
+            <h5 class="card-title">Pythian 6</h5>
+            <p class="card-text">For Xenokrates of Akragas, four horse race, 490 BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-pythian">
+          <img class="card-img-top" src="../img/4horse.jpeg" alt="four horse race">
+          <div class="card-body">
+            <h5 class="card-title">Pythian 7</h5>
+            <p class="card-text">For Megakles of Athens, four horse race, 486 BCE</p>
+            <a href="/pythian7" class="btn btn-primary">Ode Multitext</a>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-pythian">
+          <img class="card-img-top in-progress" src="../img/wrestling.jpeg" alt="Wrestling">
+          <div class="card-body">
+            <h5 class="card-title">Pythian 8</h5>
+            <p class="card-text">For Aristomenes of Aigina, boy's wrestling, 446 BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-pythian">
+          <img class="card-img-top in-progress" src="../img/armor.jpeg" alt="race in armor">
+          <div class="card-body">
+            <h5 class="card-title">Pythian 9</h5>
+            <p class="card-text">For Telesikrates of Kyrene, race in armor, 474 BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-pythian">
+          <img class="card-img-top in-progress" src="../img/race.jpeg" alt="boy's diaulos">
+          <div class="card-body">
+            <h5 class="card-title">Pythian 10</h5>
+            <p class="card-text">For Hippokleas of Thessaly, boy's diaulos, 498 BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-pythian">
+          <img class="card-img-top in-progress" src="../img/race.jpeg" alt="boy's stadion">
+          <div class="card-body">
+            <h5 class="card-title">Pythian 11</h5>
+            <p class="card-text">For Thrasydaios of Thebes, boy's stadion, (?) BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-pythian">
+          <img class="card-img-top in-progress" src="../img/medusa.jpeg" alt="Medusa">
+          <div class="card-body">
+            <h5 class="card-title">Pythian 12</h5>
+            <p class="card-text">For Midas of Akragas, pipes, 490 BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!--End Pythians-->
+
+<section class="collapse" id="nemeanOdes">
+<a name="nemeanOdes"></a>
+    <!--Grid row-->
+    <div class="row mx-1">
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-nemean">
+          <img class="card-img-top in-progress" src="../img/4horse.jpeg" alt="Four Horse Race">
+          <div class="card-body">
+            <h5 class="card-title">Nemean 1</h5>
+            <p class="card-text">For Chromios of Aitna, four horse, after 470 BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-nemean">
+          <img class="card-img-top in-progress" src="../img/pankration.jpeg" alt="Pankration">
+          <div class="card-body">
+            <h5 class="card-title">Nemean 2</h5>
+            <p class="card-text">For Timodemos of Acharnai, pankration, (?) BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-nemean">
+          <img class="card-img-top in-progress" src="../img/pankration.jpeg" alt="Pankration">
+          <div class="card-body">
+            <h5 class="card-title">Nemean 3</h5>
+            <p class="card-text">For Aristokleidas of Aigina, pankration, (?) BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-nemean">
+          <img class="card-img-top in-progress" src="../img/wrestling.jpeg" alt="Wrestling">
+          <div class="card-body">
+            <h5 class="card-title">Nemean 4</h5>
+            <p class="card-text">For Timasarchos of Aigina, wrestling, (?) BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-nemean">
+          <img class="card-img-top in-progress" src="../img/pankration.jpeg" alt="Boy's Pankration">
+          <div class="card-body">
+            <h5 class="card-title">Nemean 5</h5>
+            <p class="card-text">For Pytheas of Aigina, pankration, (?) BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-nemean">
+          <img class="card-img-top in-progress" src="../img/wrestling.jpeg" alt="Boy's Wrestling">
+          <div class="card-body">
+            <h5 class="card-title">Nemean 6</h5>
+            <p class="card-text">For Alkimidas of Aigina, boy's wrestling, (?) BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-nemean">
+          <img class="card-img-top in-progress" src="../img/longjump.jpeg" alt="boy's pentathlon">
+          <div class="card-body">
+            <h5 class="card-title">Nemean 7</h5>
+            <p class="card-text">For Sogenes of Aigina, boy's pentathlon, (?) BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-nemean">
+          <img class="card-img-top in-progress" src="../img/race.jpeg" alt="Diaulos">
+          <div class="card-body">
+            <h5 class="card-title">Nemean 8</h5>
+            <p class="card-text">For Deinias of Aigina, diaulos, (?) BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-nemean">
+          <img class="card-img-top in-progress" src="../img/4horse.jpeg" alt="Four Horse Race">
+          <div class="card-body">
+            <h5 class="card-title">Nemean 9</h5>
+            <p class="card-text">For Chromios of Aitna, four horse race, (?) BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-nemean">
+          <img class="card-img-top in-progress" src="../img/wrestling.jpeg" alt="Wrestling">
+          <div class="card-body">
+            <h5 class="card-title">Nemean 10</h5>
+            <p class="card-text">For Theaios of Argos, wrestling, (?) BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-nemean">
+          <img class="card-img-top in-progress" src="../img/tenedos.jpeg" alt="Installation as Prytanis">
+          <div class="card-body">
+            <h5 class="card-title">Nemean 11</h5>
+            <p class="card-text">For Aristagoras of Tenedos, installation as prytanis, (?) BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!--End Nemeans-->
+
+<section class="collapse" id="isthmianOdes">
+<a name="isthmianOdes"></a>
+    <!--Grid row-->
+    <div class="row mx-1">
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-isthmian">
+          <img class="card-img-top in-progress" src="../img/4horse.jpeg" alt="Four Horse Race">
+          <div class="card-body">
+            <h5 class="card-title">Isthmian 1</h5>
+            <p class="card-text">For Herodotos of Thebes, four horse, after 470 BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-isthmian">
+          <img class="card-img-top in-progress" src="../img/4horse.jpeg" alt="Four Horse Race">
+          <div class="card-body">
+            <h5 class="card-title">Isthmian 2</h5>
+            <p class="card-text">For Xenokrates of Akragas, four horse, (?) BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-isthmian">
+          <img class="card-img-top" src="../img/4horse.jpeg" alt="Four Horse Race">
+          <div class="card-body">
+            <h5 class="card-title">Isthmian 3</h5>
+            <p class="card-text">For Melissos of Thebes, four horse, (?) BCE</p>
+            <a href="#" class="btn btn-primary">Ode Multitext</a>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-isthmian">
+          <img class="card-img-top in-progress" src="../img/pankration.jpeg" alt="Pankration">
+          <div class="card-body">
+            <h5 class="card-title">Isthmian 4</h5>
+            <p class="card-text">For Melissos of Thebes, pankration, (?) BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-isthmian">
+          <img class="card-img-top in-progress" src="../img/pankration.jpeg" alt="Boy's Pankration">
+          <div class="card-body">
+            <h5 class="card-title">Isthmian 5</h5>
+            <p class="card-text">For Phylakidas of Aigina, pankration, (?) BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-isthmian">
+          <img class="card-img-top in-progress" src="../img/pankration.jpeg" alt="Boy's Pankration">
+          <div class="card-body">
+            <h5 class="card-title">Isthmian 6</h5>
+            <p class="card-text">For Phylakidas of Aigina, boy's pankration, (?) BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-isthmian">
+          <img class="card-img-top in-progress" src="../img/pankration.jpeg" alt="Pankration">
+          <div class="card-body">
+            <h5 class="card-title">Isthmian 7</h5>
+            <p class="card-text">For Strepsiades of Thebes, pankration, (?) BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-isthmian">
+          <img class="card-img-top in-progress" src="../img/pankration.jpeg" alt="Pankration">
+          <div class="card-body">
+            <h5 class="card-title">Isthmian 8</h5>
+            <p class="card-text">For Kleandros of Aigina, pankration, (?) BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <div class="card overlay-isthmian">
+          <img class="card-img-top in-progress" src="../img/unknown.jpeg" alt="Unknown">
+          <div class="card-body">
+            <h5 class="card-title">Isthmian 9</h5>
+            <p class="card-text">For ? of Aigina, ?, (?) BCE</p>
+            <a href="#" class="btn btn-info">In Progress</a>
+            <!--<a href="#" class="btn btn-primary">Ode Multitext</a>-->
+            </div>
+        </div>
+      </div>
+
+</div>
+
+</section>
+<!--End Isthmians-->
+
+<section>
+    <!--Grid row-->
+    <div class="row mx-1">
+
+<!--Grid column-->
+<div class="col-md-12 mb-4">
+    <div class="card card-image" style="background-image: url(../img/banner.jpg);">
+        <div class="overlay-dark text-white text-center align-items-center py-5 px-4">
+            <div>
+                <h6 class="display-2">Pindar MSS & Texts</h6>
+                <h3 class="card-title py-3">The Manuscripts and Texts behind the Multitext</h3>
+                <p class="pb-3">Explore the texts</p>
+                <a class="btn btn-info btn-rounded"><i class="fas fa-university"></i>&nbsp;&nbsp;Explore</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Grid column-->
+
+</div>
+
+</section>
