@@ -1,12 +1,16 @@
-// jQuery. For use with stikhoi.css to improve the
-// appearance of line numbers in classical verse.
+/* Optional js for prettier print-like
+   line numbers with counter reset */
 
-$(document).ready(function(){
-  $("ol.verse").addClass('jQuery').each(function() {
-    $('ol.verse').not('[start]').attr('start', '1');
-    var start = $(this).attr('start');
-    $(this).attr(
-      { style: "counter-reset: poem " + (start - 1)  || '1'}
-    );
-  });
+var verses = document.querySelectorAll('ol.verse');
+
+verses.forEach(function(fragment) {
+  fragment.classList.add('js');
+
+  if (fragment.hasAttribute('start')) {
+    var start = fragment.getAttribute('start');
+  } else {
+    fragment.setAttribute('start', '1');
+  }
+
+  fragment.style.counterReset = 'poem ' + (start - 1);
 });
