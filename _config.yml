@@ -2,8 +2,8 @@
 title: "The Pindar Scholia"
 author: Patrick Callahan
 description: A Jekyll theme for displaying
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://patrickrcallahan.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/dissertation" # the subpath of your site, e.g. /blog
 
 
 # Build settings
