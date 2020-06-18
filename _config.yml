@@ -4,7 +4,7 @@ author: Patrick Callahan
 description: Site for the Pindar Opera Viewer and Doctoral Dissertation
 url: "https://prorycallahan.github.io/dissertation" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/Dissertation" # the subpath of your site, e.g. /blog
-
+google_analytics: "UA-169956091-1"
 
 # Build settings
 permalink: :title/
@@ -17,5 +17,3 @@ github_username: PRoryCallahan
 twitter_username: P_RoryCallahan
 
 # plugins
-plugins: [jekyll-paginate]
-paginate: 5
