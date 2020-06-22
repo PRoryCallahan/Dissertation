@@ -1,5 +1,5 @@
 ---
-layout: text
+layout: default
 author: Patrick Callahan
 permalink: /documentation/
 ---
@@ -17,6 +17,7 @@ permalink: /documentation/
   - [Utilizing the Frontmatter](#frontmatter)
   - [Managing your Columns](#columns)
   - [Reading a Scholion in the POV](#scholiaNumbers)
+  - [App Crit Tools in the POV](#appCrit)
 - [Using the Advanced Search](#advancedSearch)
 <hr>
 ### <a id="notes">General Notes</a>
@@ -284,6 +285,10 @@ With responsive columns built on Bootstrap's CSS grid system, **mobile users** s
 #### <a id="scholiaNumbers">Reading a Scholion in the POV</a>
 
 For those unfamiliar with scholia...
+
+#### <a id="appCrit">App Crit Tools in the POV</a>
+
+<mark class="A"></mark>
 
 ### <a id="advancedSearch">Using the Advanced Search</a>
 At present the advanced search is still in development as I work on some additional coding skills to build a smoother webAPI experience. At present, users can fork the [texts repository](https://github.com/PRoryCallahan/Texts/tree/master/Pindar)
