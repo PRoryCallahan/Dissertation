@@ -4,14 +4,6 @@
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
-p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
-    font-weight: 300;
-    line-height: 1.7em;
-    color: #999;
-}
-
 a,
 a:hover,
 a:focus {
@@ -21,25 +13,13 @@ a:focus {
 }
 
 .navbar {
-    padding: 15px 10px;
-    background: #fff;
-    border: none;
-    border-radius: 0;
-    margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 .navbar-btn {
     box-shadow: none;
     outline: none !important;
     border: none;
-}
-
-.line {
-    width: 100%;
-    height: 1px;
-    border-bottom: 1px dashed #ddd;
-    margin: 40px 0;
 }
 
 /* ---------------------------------------------------
@@ -69,10 +49,11 @@ a:focus {
     height: 35px;
     line-height: 35px;
     text-align: center;
-    background: $dark;
+    background: $info;
     position: absolute;
     top: 10px;
     right: 10px;
+    border-radius: 5px;
     cursor: pointer;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
@@ -81,7 +62,7 @@ a:focus {
 
 #dismiss:hover {
     background: #fff;
-    color: #7386D5;
+    color: $primary;
 }
 
 .overlay {
@@ -102,6 +83,10 @@ a:focus {
 #sidebar .sidebar-header {
     padding: 20px;
     background: $primary;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
 }
 
 #sidebar ul.components {
@@ -112,12 +97,14 @@ a:focus {
 #sidebar ul p {
     color: #fff;
     padding: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 #sidebar ul li a {
     padding: 10px;
     font-size: 1.1em;
     display: block;
+    font-family: 'Poppins', sans-serif;
 }
 
 #sidebar ul li a:hover {
@@ -177,11 +164,5 @@ a.article:hover {
 ----------------------------------------------------- */
 
 #content {
-    width: 100%;
-    padding: 20px;
-    min-height: 100vh;
-    transition: all 0.3s;
     position: absolute;
-    top: 0;
-    right: 0;
 }

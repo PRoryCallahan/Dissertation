@@ -1,10 +1,11 @@
 ---
-layout: default
+layout: post
 author: Patrick Callahan
 permalink: /documentation/
 ---
 
-<h1 class="display-2 text-center">Pindar Opera Viewer Documentation</h1>
+## Pindar Opera Viewer Documentation
+
 <hr>
 - [General Notes](#notes)
 - [A Student's Guide to Scholia](#introScholia)
@@ -280,7 +281,7 @@ Below the frontmatter you encounter the POV column control panel. While future e
 2. a Greek text and/or English translation of a revised and updated version of the scholia vetera, still largely based on Anders Bjørn Drachmann's 1903-1927 editions.
 3. Greek texts and English translations of the scholia from individual MSS.
 
-With responsive columns built on Bootstrap's CSS grid system, **mobile users** should see columns shift vertically. **Laptop users:** we recommend you bring up only 3-6 columns at any given time if you want to see them parallel in an aesthetically pleasing manner. **Desktop users** hypothetically can access up to 12 parallel columns (depending on the size of your display) but we encourage a max of 6 parallel columns active at any one time. Please report any problems with column responsiveness to pcallahan [at] fordham.edu.
+With responsive columns built on Bootstrap's CSS grid system, **mobile users** should see columns shift vertically. **Laptop users:** we recommend you bring up only 3-4 columns at any given time if you want to see them parallel in an aesthetically pleasing manner. **Desktop users** hypothetically can access up to 12 parallel columns (depending on the size of your display) but we encourage a max of 6 parallel columns active at any one time. Please report any problems with column responsiveness to pcallahan [at] fordham.edu.
 
 #### <a id="scholiaNumbers">Reading a Scholion in the POV</a>
 
