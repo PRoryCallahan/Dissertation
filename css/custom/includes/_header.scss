@@ -1,3 +1,5 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
 .navbar{
   box-shadow: 1px 1px 2px $primary;
 
@@ -9,8 +11,19 @@
 
 .nav-link {
   color: $info !important;
+  font-family: 'Poppins', sans-serif;
 
   &:hover {
     color: $primary !important;
+  }
+}
+
+.nav-bibliolathas {
+  color:$white !important;
+  font-family: 'Poppins', sans-serif;
+
+  &:hover {
+    color: $grey-lighten-2 !important;
+    
   }
 }

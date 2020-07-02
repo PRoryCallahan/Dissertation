@@ -1,5 +1,6 @@
 $primary: #8b0000; // dark red
 $info: #7f7f7f; // grey
+$grey-lighten-2: #e0e0e0; 
 
 $code-heading-background: #dededc; // light grey
 $code-text-color: #b6b6b6; // off white
@@ -21,4 +22,12 @@ hr {
 
 .btn.round {
   border-radius: 24px;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
 }
